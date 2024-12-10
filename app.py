@@ -2,16 +2,19 @@ import pandas as pd
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.layers import Input, Embedding, Flatten, Dot, Dense, Add
-from tensorflow.keras.models import Model
+from tensorflow.keras.models import Model, load_model
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.metrics import mean_squared_error
 import googlemaps
 
+train = 0
+
 # Load dataset
 place = pd.read_csv('Data/tourism_with_id.csv')
 rating = pd.read_csv('Data/tourism_rating.csv')
 user = pd.read_csv('Data/user.csv')
+data_image = pd.read_csv('Data/tourism_data_img.csv')
 
 # Ensure that the 'Place_Ratings' and 'Rating' columns are numeric
 rating['Place_Ratings'] = pd.to_numeric(rating['Place_Ratings'], errors='coerce')  # Convert to numeric, coercing errors to NaN
@@ -49,6 +52,13 @@ merge_data = merge_data.groupby('Place_Id').agg(
     Lat=('Lat', 'first'),
     Long=('Long', 'first')
 ).reset_index()
+
+merged_final = pd.merge(
+    merge_data,
+    data_image[['Place_Id', 'image_url']],  # Include only relevant columns from data_image
+    on='Place_Id',  # Column to merge on
+    how='left'      # Use 'left' to keep all rows from merge_data
+)
 
 # Display the first few rows of the 'place' dataframe
 print(place.head())
@@ -88,13 +98,24 @@ prediction = Add()([dot_product, user_bias, place_bias])
 cf_model = Model([user_input, place_input], prediction)
 cf_model.compile(optimizer='adam', loss='mean_squared_error')
 
-# Train the model
-cf_model.fit(
-    [rating['User_Index'], rating['Place_Index']],
-    rating['Place_Ratings'],
-    epochs=20,
-    verbose=1
-)
+def load_or_train_cf_model():
+    model_path = 'Model/cf_model.h5'
+    
+    try:
+        # Try loading the pre-trained model
+        cf_model = load_model(model_path)
+    except:
+        # If model does not exist, train it
+        print("Model not found, training a new model...")
+        cf_model.fit(
+            [rating['User_Index'], rating['Place_Index']],
+            rating['Place_Ratings'],
+            epochs=20,
+            verbose=1
+        )
+        # Save the model after training
+        cf_model.save(model_path)  # Save the model for future use
+    return cf_model
 
 def predict_ratings(user_id, place_ids):
     user_index = user_id_to_index[user_id]
@@ -193,190 +214,6 @@ def calculate_distance(start_lat, start_lng, end_lat, end_lng):
         print(f"Error calculating distance for origin: {origin}, destination: {destination}")
         print(f"Error details: {str(e)}")
         return None
-    
-def recommend_tourist_destinations(
-    user_id, user_lat, user_lng, user_city, user_categories,
-    days=None, time=8, budget=None, is_new_user=False
-    ):
-    """
-    Recommend tourist destinations with sequential distance calculation,
-    resetting to original starting point each day.
-
-    Args:
-        user_id: The ID of the user for whom the recommendations are being made.
-        user_lat (float): Latitude of the user's starting location.
-        user_lng (float): Longitude of the user's starting location.
-        user_city (str): City preference for the user.
-        user_categories: Categories filter (if any).
-        days: Number of days for splitting recommendations (if applicable).
-        time (float): Fixed daily time limit set to 8 hours.
-        budget (float): Budget preference for the user (if applicable).
-
-    Returns:
-        A list of recommended destinations for each day, total time used, and total budget spent.
-    """
-
-    # Check if existing user
-    user_exists = user_id in rating['User_Id'].unique()
-
-    # Determine categories
-    if user_categories is None:
-      if user_exists:
-        # Get user's past ratings
-        user_ratings = rating[rating['User_Id'] == user_id]
-
-        # Merge ratings with place data to get categories
-        user_rated_places = pd.merge(rating, merge_data[['Place_Id', 'Category']], on='Place_Id', how='left')
-
-        # Count category frequencies and sort
-        category_counts = user_rated_places['Category'].value_counts().reset_index()
-        category_counts.columns = ['Category', 'Frequency']
-
-        # Get the most frequent category
-        user_categories = category_counts.head(2)['Category'].tolist()
-        print(f"User's most frequent category: {user_categories}")
-
-      else:
-        city_places = merge_data[merge_data['City'].str.contains(user_city, case=False, na=False)]
-        # Group by category and calculate mean rating
-        category_ratings = city_places.groupby('Category')['Rating'].mean().sort_values(ascending=False)
-        # Select top 3 categories with highest average ratings in the city
-        user_categories = category_ratings.head(3).index.tolist()
-
-        print(f"New user - selecting top-rated categories in {user_city}:")
-        print(category_ratings)
-        print(f"Selected categories: {user_categories}")
-
-    # Ensure category is a list
-    if not isinstance(user_categories, list):
-      user_categories = [user_categories]
-
-    print(f"Final categories: {user_categories}")
-
-    # Step 1: Filter places based on city and categories (if provided)
-    filtered_places = filter_places(
-        city=user_city,
-        categories=user_categories
-        )
-
-    # Step 2: Get Content-Based Filtering recommendations
-    cbf_recommendations = calculate_cbf_scores(filtered_places)
-
-    # Step 3: Get Collaborative Filtering recommendations
-    place_ids = cbf_recommendations['Place_Id'].unique()
-
-    if user_exists:
-        cf_recommendations = predict_ratings(user_id, place_ids)
-
-        # Convert to DataFrame
-        cf_recommendations = pd.DataFrame({'Place_Id': place_ids, 'cf_rating': cf_recommendations})
-
-    else:
-        # Calculate weighted global average ratings
-        global_avg_ratings = merge_data.groupby('Place_Id')['Rating'].mean()
-
-        cf_recommendations = pd.DataFrame({
-            'Place_Id': place_ids,
-            'cf_rating': [
-                global_avg_ratings.get(pid, merge_data['Rating'].mean()) + np.random.uniform(-0.5, 0.5)
-                for pid in place_ids
-                ]
-        })
-
-    # Convert to DataFrame
-    cbf_recommendations = pd.DataFrame(cbf_recommendations)
-
-    # Step 4: Combine recommendations
-    combined_recommendations = pd.merge(
-        cbf_recommendations,
-        merge_data[['Place_Id', 'Rating', 'Time_Minutes', 'Price', 'Lat', 'Long']],
-        on='Place_Id',
-        how='left'
-        )
-    combined_recommendations = pd.merge(
-        combined_recommendations,
-        cf_recommendations,
-        on='Place_Id',
-        how='left'
-        )
-
-    # Calculate MSE between CBF and CF recommendations
-    combined_recommendations['mse'] = (
-        combined_recommendations['Rating'] - combined_recommendations['cf_rating'])**2
-
-    # Sort recommendations by MSE to prioritize consistent recommendations
-    combined_recommendations = combined_recommendations.sort_values('mse')
-
-    # Remove duplicates, if any
-    combined_recommendations = combined_recommendations.drop_duplicates(subset='Place_Id')
-
-    # Track recommendations per day
-    recommendations_per_day = []
-    total_time_per_day = []
-    total_budget_per_day = []
-
-    # Track visited places across days
-    visited_places = set()
-
-    if days:
-        for day in range(days):
-            day_recommendations = []
-            day_total_time = 0
-            day_total_budget = 0
-
-            # IMPORTANT: Reset to original starting point for each day
-            current_lat = user_lat
-            current_lng = user_lng
-
-            # Iterate through sorted recommendations
-            for _, place in combined_recommendations.iterrows():
-                # Skip if place has been visited in previous days
-                if place['Place_Id'] in visited_places:
-                    continue
-
-                # Calculate distance from current location to this destination
-                distance_km, travel_time = calculate_distance(current_lat, current_lng, place['Lat'], place['Long'])
-
-                # Calculate total time for this place (travel time + visit time in hours)
-                place_total_time = (place['Time_Minutes'] / 60) + (travel_time / 60)
-
-                # Check if adding this place would exceed 8-hour limit
-                if day_total_time + place_total_time > time:
-                    continue
-
-                # Check budget constraint if provided
-                if budget and day_total_budget + place['Price'] > budget:
-                    continue
-
-                # Add place to daily recommendations
-                place_with_distance = place.copy()
-                place_with_distance['distance_km'] = distance_km
-                place_with_distance['travel_time'] = travel_time
-                day_recommendations.append(place_with_distance)
-
-                # Update tracking variables
-                day_total_time += place_total_time
-                day_total_budget += place['Price']
-
-                # Update current location for next distance calculation
-                current_lat = place['Lat']
-                current_lng = place['Long']
-
-                # Mark place as visited
-                visited_places.add(place['Place_Id'])
-
-            # Convert to DataFrame
-            day_recommendations_df = pd.DataFrame(day_recommendations)
-            recommendations_per_day.append(day_recommendations_df)
-            total_time_per_day.append(day_total_time)
-            total_budget_per_day.append(day_total_budget)
-
-            # Calculate MSE
-            mse = combined_recommendations['mse'].mean()
-
-    return recommendations_per_day, total_time_per_day, total_budget_per_day, mse
-
-flights_data = pd.read_csv('Data/flightsCapstone_transformedV2.csv')
 
 def map_city_to_airport(city):
     """Map input city to full airport name"""
@@ -397,6 +234,8 @@ def map_city_to_airport(city):
         'Banda Aceh': 'Bandar Udara Internasional Sultan Iskandar Muda'
     }
     return airport_mapping.get(city, city)
+
+flights_data = pd.read_csv('Data/flightsCapstone_cleaned.csv')
 
 def filter_flights(departure_city, destination_city, max_budget=None):
     # Convert city names to full airport names
@@ -426,7 +265,7 @@ def filter_places(city=None, categories=None):
     """
     print(f"Filtering places - City: {city}, Categories: {categories}")
 
-    filtered = merge_data.copy()
+    filtered = merged_final.copy()
     if city:
         filtered = filtered[filtered['City'].str.contains(city, case=False, na=False)]
 
@@ -483,7 +322,7 @@ def recommend_tourist_destinations(
         user_ratings = rating[rating['User_Id'] == user_id]
 
         # Merge ratings with place data to get categories
-        user_rated_places = pd.merge(rating, merge_data[['Place_Id', 'Category']], on='Place_Id', how='left')
+        user_rated_places = pd.merge(rating, merged_final[['Place_Id', 'Category']], on='Place_Id', how='left')
 
         # Count category frequencies and sort
         category_counts = user_rated_places['Category'].value_counts().reset_index()
@@ -494,7 +333,7 @@ def recommend_tourist_destinations(
         print(f"User's most frequent category: {user_categories}")
 
       else:
-        city_places = merge_data[merge_data['City'].str.contains(user_city, case=False, na=False)]
+        city_places = merged_final[merged_final['City'].str.contains(user_city, case=False, na=False)]
         # Group by category and calculate mean rating
         category_ratings = city_places.groupby('Category')['Rating'].mean().sort_values(ascending=False)
         # Select top 3 categories with highest average ratings in the city
@@ -530,12 +369,12 @@ def recommend_tourist_destinations(
 
     else:
         # Calculate weighted global average ratings
-        global_avg_ratings = merge_data.groupby('Place_Id')['Rating'].mean()
+        global_avg_ratings = merged_final.groupby('Place_Id')['Rating'].mean()
 
         cf_recommendations = pd.DataFrame({
             'Place_Id': place_ids,
             'cf_rating': [
-                global_avg_ratings.get(pid, merge_data['Rating'].mean()) + np.random.uniform(-0.5, 0.5)
+                global_avg_ratings.get(pid, merged_final['Rating'].mean()) + np.random.uniform(-0.5, 0.5)
                 for pid in place_ids
                 ]
         })
@@ -546,7 +385,7 @@ def recommend_tourist_destinations(
     # Step 4: Combine recommendations
     combined_recommendations = pd.merge(
         cbf_recommendations,
-        merge_data[['Place_Id', 'Rating', 'Time_Minutes', 'Price', 'Lat', 'Long']],
+        merged_final[['Place_Id', 'Rating', 'Time_Minutes', 'Price', 'Lat', 'Long', 'image_url']],
         on='Place_Id',
         how='left'
         )
@@ -633,11 +472,7 @@ def recommend_tourist_destinations(
 
     return recommendations_per_day, total_time_per_day, total_budget_per_day, mse, recommended_flights
 
-import os
-import threading
-
 from flask import Flask, request, jsonify
-from pyngrok import ngrok
 
 app = Flask(__name__)
 port = "4000"
@@ -651,19 +486,24 @@ port = "4000"
 def recommend():
     try:
         data = request.get_json()
+
+        # Extract parameters from the POST request
         user_id = data.get('user_id')
         user_lat = data.get('user_lat')
         user_lng = data.get('user_lng')
         user_city = data.get('user_city')
         user_categories = data.get('user_categories')
-        days = data.get('days')
-        time = data.get('time', 8)  # Default to 8 if not provided
-        budget = data.get('budget')
+        days = data.get('days', None)
+        time = data.get('time', 8)
+        budget = data.get('budget', None)
+        departure_city = data.get('departure_city', None) 
         is_new_user = data.get('is_new_user', False)
-        departure_city = data.get('departure_city')
-        destination_city = data.get('destination_city')
+        destination_city = data.get('destination_city', None)
 
-
+        # Get recommendations
+        recommendations_per_day, total_time_per_day, total_budget_per_day, mse, recommended_flights = recommend_tourist_destinations(
+            user_id, user_lat, user_lng, user_city, user_categories, days, time, budget, False, departure_city, destination_city
+        )
         recommendations_per_day, total_time_per_day, total_budget_per_day, mse, recommended_flights = recommend_tourist_destinations(
             user_id, user_lat, user_lng, user_city, user_categories,
             days, time, budget, is_new_user, departure_city, destination_city
@@ -689,9 +529,5 @@ def recommend():
 
     except Exception as e:
         return jsonify({'error': str(e)}), 500
-
-@app.route("/")
-def index():
-    return "Hello from Colab!"
-
-app.run(port=port)
+    
+app.run(debug=True, port=4000)

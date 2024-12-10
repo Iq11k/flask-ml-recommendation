@@ -1,52 +1,179 @@
 departure_airport_name,departure_time,arrival_airport_name,arrival_time,duration,airline,travel_class,price
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 06:00:00,Bandar Udara Internasional Yogyakarta,2024-11-27 07:15:00,75,Batik Air,Economy,1663380
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 18:10:00,Bandar Udara Internasional Yogyakarta,2024-11-27 19:25:00,75,Citilink Indonesia,Economy,1753371
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 14:45:00,Bandar Udara Internasional Yogyakarta,2024-11-27 16:05:00,80,Garuda Indonesia,Economy,2040820
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 17:20:00,Bandar Udara Internasional Yogyakarta,2024-11-27 18:30:00,70,Pelita Air Service,Economy,1930000
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 08:15:00,Bandar Udara Jenderal Ahmad Yani,2024-11-27 09:30:00,75,Citilink Indonesia,Economy,1644142
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 06:35:00,Bandar Udara Jenderal Ahmad Yani,2024-11-27 07:45:00,70,Thai Lion Air,Economy,1701756
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 06:35:00,Bandar Udara Jenderal Ahmad Yani,2024-11-27 07:45:00,70,Batik Air,Economy,1708596
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 07:50:00,Bandar Udara Jenderal Ahmad Yani,2024-11-27 09:00:00,70,Garuda Indonesia,Economy,1978336
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 14:40:00,Bandar Udara Internasional Juanda,2024-11-27 16:10:00,90,Thai Lion Air,Economy,1838170
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 14:40:00,Bandar Udara Internasional Juanda,2024-11-27 16:10:00,90,Lion,Economy,1845160
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 15:40:00,Bandar Udara Internasional Juanda,2024-11-27 17:20:00,100,Citilink Indonesia,Economy,1949451
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 17:00:00,Bandar Udara Internasional Juanda,2024-11-27 18:30:00,90,Batik Air,Economy,1982360
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 12:50:00,Bandar Udara Internasional Juanda,2024-11-27 14:25:00,95,Pelita Air Service,Economy,1990040
-Bandar Udara Internasional Yogyakarta,2024-11-27 16:15:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 17:30:00,75,TransNusa,Economy,1603082
-Bandar Udara Internasional Yogyakarta,2024-11-27 19:55:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 21:10:00,75,Citilink Indonesia,Economy,1645790
-Bandar Udara Internasional Yogyakarta,2024-11-27 19:15:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 20:30:00,75,Batik Air,Economy,1664520
-Bandar Udara Internasional Yogyakarta,2024-11-27 19:15:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 20:35:00,80,Pelita Air Service,Economy,2003040
-Bandar Udara Internasional Yogyakarta,2024-11-27 06:25:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 07:40:00,75,Garuda Indonesia,Economy,4274030
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 13:25:00,Bandar Udara Jenderal Ahmad Yani,2024-11-27 14:40:00,75,Garuda Indonesia,Economy,4274030
-Bandar Udara Internasional Yogyakarta,2024-11-27 06:25:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 07:40:00,75,Garuda Indonesia,Economy,4863280
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 08:45:00,Bandar Udara Internasional Juanda,2024-11-27 10:25:00,100,Garuda Indonesia,Economy,4863280
-Bandar Udara Jenderal Ahmad Yani,2024-11-27 17:10:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 18:25:00,75,Citilink Indonesia,Economy,1719622
-Bandar Udara Jenderal Ahmad Yani,2024-11-27 15:40:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 16:50:00,70,Thai Lion Air,Economy,1776730
-Bandar Udara Jenderal Ahmad Yani,2024-11-27 07:00:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 08:05:00,65,Batik Air,Economy,1897296
-Bandar Udara Jenderal Ahmad Yani,2024-11-27 07:05:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 08:20:00,75,Garuda Indonesia,Economy,1940596
-Bandar Udara Jenderal Ahmad Yani,2024-11-27 09:45:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 11:05:00,80,Garuda Indonesia,Economy,4274030
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 14:45:00,Bandar Udara Internasional Yogyakarta,2024-11-27 16:05:00,80,Garuda Indonesia,Economy,4274030
-Bandar Udara Jenderal Ahmad Yani,2024-11-27 15:25:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 16:50:00,85,Garuda Indonesia,Economy,4274030
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 18:55:00,Bandar Udara Internasional Yogyakarta,2024-11-27 20:15:00,80,Garuda Indonesia,Economy,4274030
-Bandar Udara Jenderal Ahmad Yani,2024-11-27 10:10:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 11:25:00,75,Citilink Indonesia,Economy,3434794
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 15:40:00,Bandar Udara Internasional Juanda,2024-11-27 17:20:00,100,Citilink Indonesia,Economy,3434794
-Bandar Udara Jenderal Ahmad Yani,2024-11-27 15:25:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 16:50:00,85,Garuda Indonesia,Economy,5047310
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 18:30:00,Bandar Udara Internasional Juanda,2024-11-27 20:15:00,105,Garuda Indonesia,Economy,5047310
-Bandar Udara Internasional Juanda,2024-11-27 06:00:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 07:35:00,95,Citilink Indonesia,Economy,1837621
-Bandar Udara Internasional Juanda,2024-11-27 07:50:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 09:15:00,85,Thai Lion Air,Economy,1884580
-Bandar Udara Internasional Juanda,2024-11-27 07:50:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 09:15:00,85,Lion,Economy,1892070
-Bandar Udara Internasional Juanda,2024-11-27 06:00:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 07:25:00,85,Batik Air,Economy,1974870
-Bandar Udara Internasional Juanda,2024-11-27 16:50:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 18:30:00,100,Garuda Indonesia,Economy,2492170
-Bandar Udara Internasional Juanda,2024-11-27 10:40:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 12:15:00,95,Pelita Air Service,Economy,2030010
-Bandar Udara Internasional Juanda,2024-11-27 20:55:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 22:35:00,100,Garuda Indonesia,Economy,5185580
-Bandar Udara Internasional Soekarno Hatta,2024-11-28 18:55:00,Bandar Udara Internasional Yogyakarta,2024-11-28 20:15:00,80,Garuda Indonesia,Economy,5185580
-Bandar Udara Internasional Juanda,2024-11-27 07:05:00,Bandar Udara Internasional Changi Singapura,2024-11-27 10:25:00,140,Garuda Indonesia,Economy,11826740
-Bandar Udara Internasional Changi Singapura,2024-11-27 15:20:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 16:20:00,120,Garuda Indonesia,Economy,11826740
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 18:55:00,Bandar Udara Internasional Yogyakarta,2024-11-27 20:15:00,80,Garuda Indonesia,Economy,11826740
-Bandar Udara Internasional Juanda,2024-11-27 07:05:00,Bandar Udara Internasional Changi Singapura,2024-11-27 10:25:00,140,Garuda Indonesia,Economy,11826740
-Bandar Udara Internasional Changi Singapura,2024-11-27 12:20:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 13:20:00,120,Garuda Indonesia,Economy,11826740
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 18:55:00,Bandar Udara Internasional Yogyakarta,2024-11-27 20:15:00,80,Garuda Indonesia,Economy,11826740
-Bandar Udara Internasional Juanda,2024-11-27 07:05:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 08:40:00,95,Garuda Indonesia,Business Class,15101111
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 11:30:00,Bandar Udara Internasional Yogyakarta,2024-11-27 12:50:00,80,Garuda Indonesia,Business Class,15101111
-Bandar Udara Internasional Juanda,2024-11-27 06:00:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 07:35:00,95,Citilink Indonesia,Economy,4167587
-Bandar Udara Internasional Soekarno Hatta,2024-11-27 15:25:00,Bandar Udara Jenderal Ahmad Yani,2024-11-27 16:40:00,75,Citilink Indonesia,Economy,4167587
+Bandar Udara Internasional Changi Singapura,2024-11-27 15:20:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 16:20:00,120,Garuda Indonesia,Economy,11826740.0
+Bandar Udara Internasional Changi Singapura,2024-11-27 12:20:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 13:20:00,120,Garuda Indonesia,Economy,11826740.0
+Bandar Udara Internasional Halim Perdanakusuma,2024-12-12 16:30,Bandar Udara Internasional Juanda,2024-12-12 17:55,85,Batik Air,Economy,3857950.0
+Bandar Udara Internasional Juanda,2024-11-27 06:00:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 07:35:00,95,Citilink Indonesia,Economy,1837621.0
+Bandar Udara Internasional Juanda,2024-11-27 07:50:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 09:15:00,85,Thai Lion Air,Economy,1884580.0
+Bandar Udara Internasional Juanda,2024-11-27 07:50:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 09:15:00,85,Lion,Economy,1892070.0
+Bandar Udara Internasional Juanda,2024-11-27 06:00:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 07:25:00,85,Batik Air,Economy,1974870.0
+Bandar Udara Internasional Juanda,2024-11-27 16:50:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 18:30:00,100,Garuda Indonesia,Economy,2492170.0
+Bandar Udara Internasional Juanda,2024-11-27 10:40:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 12:15:00,95,Pelita Air Service,Economy,2030010.0
+Bandar Udara Internasional Juanda,2024-11-27 20:55:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 22:35:00,100,Garuda Indonesia,Economy,5185580.0
+Bandar Udara Internasional Juanda,2024-11-27 07:05:00,Bandar Udara Internasional Changi Singapura,2024-11-27 10:25:00,140,Garuda Indonesia,Economy,11826740.0
+Bandar Udara Internasional Juanda,2024-11-27 07:05:00,Bandar Udara Internasional Changi Singapura,2024-11-27 10:25:00,140,Garuda Indonesia,Economy,11826740.0
+Bandar Udara Internasional Juanda,2024-11-27 07:05:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 08:40:00,95,Garuda Indonesia,Business Class,15101111.0
+Bandar Udara Internasional Juanda,2024-11-27 06:00:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 07:35:00,95,Citilink Indonesia,Economy,4167587.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-13 16:55,Bandar Udara Internasional Yogyakarta,2024-12-13 18:15,80,Garuda Indonesia,Economy,14002750.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-12 17:05,Bandar Udara Internasional Yogyakarta,2024-12-12 18:25,80,Garuda Indonesia,Economy,14033400.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-13 07:35,Bandar Udara Jenderal Ahmad Yani,2024-12-13 08:45,70,Garuda Indonesia,Economy,13887350.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-13 07:35,Bandar Udara Jenderal Ahmad Yani,2024-12-13 08:45,70,Garuda Indonesia,Economy,13887350.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-12 15:45,Bandar Udara Jenderal Ahmad Yani,2024-12-12 16:55,70,Garuda Indonesia,Economy,13907330.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-13 06:50,Bandar Udara Internasional Juanda,2024-12-13 08:25,95,Garuda Indonesia,Economy,14710950.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-12 16:00,Bandar Udara Internasional Juanda,2024-12-12 17:40,100,Garuda Indonesia,Economy,14736480.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-12 17:05,Bandar Udara Internasional Yogyakarta,2024-12-12 18:25,80,Garuda Indonesia,Economy,7764360.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-13 16:55,Bandar Udara Internasional Yogyakarta,2024-12-13 18:15,80,Garuda Indonesia,Economy,7764360.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-13 14:45,Bandar Udara Internasional Yogyakarta,2024-12-13 16:05,80,Garuda Indonesia,Business Class,15097680.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-12 15:45,Bandar Udara Jenderal Ahmad Yani,2024-12-12 16:55,70,Garuda Indonesia,Economy,7626790.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-13 07:35,Bandar Udara Jenderal Ahmad Yani,2024-12-13 08:45,70,Garuda Indonesia,Economy,7626790.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-12 16:00,Bandar Udara Internasional Juanda,2024-12-12 17:40,100,Garuda Indonesia,Economy,8537740.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-13 06:50,Bandar Udara Internasional Juanda,2024-12-13 08:25,95,Garuda Indonesia,Economy,8537740.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-12 17:00,Bandar Udara Internasional Yogyakarta,2024-12-12 18:15,75,Batik Air,Economy,3274730.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-12 15:45,Bandar Udara Jenderal Ahmad Yani,2024-12-12 16:55,70,Garuda Indonesia,Economy,13457080.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-13 07:35,Bandar Udara Jenderal Ahmad Yani,2024-12-13 08:45,70,Garuda Indonesia,Economy,13457080.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-12 17:00,Bandar Udara Internasional Yogyakarta,2024-12-12 18:15,75,Batik Air,Economy,3191670.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-12 18:55,Bandar Udara Internasional Yogyakarta,2024-12-12 20:15,80,Garuda Indonesia,Economy,4385770.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-13 08:05,Bandar Udara Jenderal Ahmad Yani,2024-12-13 09:20,75,Citilink Indonesia,Economy,3048826.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-12 17:45,Bandar Udara Jenderal Ahmad Yani,2024-12-12 18:55,70,Garuda Indonesia,Economy,4248100.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-13 07:35,Bandar Udara Jenderal Ahmad Yani,2024-12-13 08:45,70,Garuda Indonesia,Economy,4248100.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-12 13:25,Bandar Udara Jenderal Ahmad Yani,2024-12-12 14:40,75,Garuda Indonesia,Business Class,13681110.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-12 14:40,Bandar Udara Internasional Juanda,2024-12-12 16:10,90,Lion,Economy,3396898.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-12 17:45,Bandar Udara Internasional Juanda,2024-12-12 19:25,100,Citilink Indonesia,Economy,3432886.0
+Bandar Udara Internasional Soekarno Hatta,2024-12-12 13:05,Bandar Udara Internasional Juanda,2024-12-12 14:35,90,Batik Air,Economy,3563550.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 06:00:00,Bandar Udara Internasional Yogyakarta,2024-11-27 07:15:00,75,Batik Air,Economy,1663380.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 18:10:00,Bandar Udara Internasional Yogyakarta,2024-11-27 19:25:00,75,Citilink Indonesia,Economy,1753371.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 14:45:00,Bandar Udara Internasional Yogyakarta,2024-11-27 16:05:00,80,Garuda Indonesia,Economy,2040820.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 17:20:00,Bandar Udara Internasional Yogyakarta,2024-11-27 18:30:00,70,Pelita Air Service,Economy,1930000.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 08:15:00,Bandar Udara Jenderal Ahmad Yani,2024-11-27 09:30:00,75,Citilink Indonesia,Economy,1644142.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 06:35:00,Bandar Udara Jenderal Ahmad Yani,2024-11-27 07:45:00,70,Thai Lion Air,Economy,1701756.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 06:35:00,Bandar Udara Jenderal Ahmad Yani,2024-11-27 07:45:00,70,Batik Air,Economy,1708596.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 07:50:00,Bandar Udara Jenderal Ahmad Yani,2024-11-27 09:00:00,70,Garuda Indonesia,Economy,1978336.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 14:40:00,Bandar Udara Internasional Juanda,2024-11-27 16:10:00,90,Thai Lion Air,Economy,1838170.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 14:40:00,Bandar Udara Internasional Juanda,2024-11-27 16:10:00,90,Lion,Economy,1845160.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 15:40:00,Bandar Udara Internasional Juanda,2024-11-27 17:20:00,100,Citilink Indonesia,Economy,1949451.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 17:00:00,Bandar Udara Internasional Juanda,2024-11-27 18:30:00,90,Batik Air,Economy,1982360.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 12:50:00,Bandar Udara Internasional Juanda,2024-11-27 14:25:00,95,Pelita Air Service,Economy,1990040.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 13:25:00,Bandar Udara Jenderal Ahmad Yani,2024-11-27 14:40:00,75,Garuda Indonesia,Economy,4274030.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 08:45:00,Bandar Udara Internasional Juanda,2024-11-27 10:25:00,100,Garuda Indonesia,Economy,4863280.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 14:45:00,Bandar Udara Internasional Yogyakarta,2024-11-27 16:05:00,80,Garuda Indonesia,Economy,4274030.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 18:55:00,Bandar Udara Internasional Yogyakarta,2024-11-27 20:15:00,80,Garuda Indonesia,Economy,4274030.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 15:40:00,Bandar Udara Internasional Juanda,2024-11-27 17:20:00,100,Citilink Indonesia,Economy,3434794.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 18:30:00,Bandar Udara Internasional Juanda,2024-11-27 20:15:00,105,Garuda Indonesia,Economy,5047310.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-28 18:55:00,Bandar Udara Internasional Yogyakarta,2024-11-28 20:15:00,80,Garuda Indonesia,Economy,5185580.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 18:55:00,Bandar Udara Internasional Yogyakarta,2024-11-27 20:15:00,80,Garuda Indonesia,Economy,11826740.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 18:55:00,Bandar Udara Internasional Yogyakarta,2024-11-27 20:15:00,80,Garuda Indonesia,Economy,11826740.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 11:30:00,Bandar Udara Internasional Yogyakarta,2024-11-27 12:50:00,80,Garuda Indonesia,Business Class,15101111.0
+Bandar Udara Internasional Soekarno Hatta,2024-11-27 15:25:00,Bandar Udara Jenderal Ahmad Yani,2024-11-27 16:40:00,75,Citilink Indonesia,Economy,4167587.0
+Bandar Udara Internasional Sultan Aji Muhammad Sulaiman Sepinggan Balikpapan,2024-12-12 10:15,Bandar Udara Internasional Yogyakarta,2024-12-12 11:15,120,Lion,Economy,4139130.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 16:15,Bandar Udara Internasional Soekarno Hatta,2024-12-12 17:35,140,Lion,Economy,9126980.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 17:25,Bandar Udara Internasional Yogyakarta,2024-12-12 18:30,125,Lion,Economy,8279450.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 13:10,Bandar Udara Internasional Yogyakarta,2024-12-12 14:15,125,Lion,Economy,8368350.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 12:35,Bandar Udara Internasional Juanda,2024-12-12 13:15,100,Lion,Economy,7904530.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 22:55,Bandar Udara Internasional Soekarno Hatta,2024-12-13 00:15,140,Citilink Indonesia,Economy,2974810.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 05:15,Bandar Udara Internasional Soekarno Hatta,2024-12-12 06:35,140,Citilink Indonesia,Economy,3061390.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 06:05,Bandar Udara Internasional Soekarno Hatta,2024-12-12 07:25,140,Citilink Indonesia,Economy,3061390.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 07:30,Bandar Udara Internasional Soekarno Hatta,2024-12-12 08:45,135,Lion,Economy,3061395.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 21:05,Bandar Udara Internasional Soekarno Hatta,2024-12-12 22:20,135,Batik Air,Economy,3101995.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 15:15,Bandar Udara Internasional Soekarno Hatta,2024-12-12 16:35,140,Sriwijaya Air,Economy,4139130.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 17:00,Bandar Udara Internasional Soekarno Hatta,2024-12-12 18:20,140,Super Air Jet,Economy,4139130.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 13:10,Bandar Udara Internasional Yogyakarta,2024-12-12 14:15,125,Lion,Economy,2932580.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 17:25,Bandar Udara Internasional Yogyakarta,2024-12-12 18:30,125,Lion,Economy,2999180.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 08:40,Bandar Udara Internasional Yogyakarta,2024-12-12 09:45,125,Lion,Economy,3065780.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 14:20,Bandar Udara Internasional Syamsudin Noor,2024-12-12 15:40,80,Lion,Economy,3776280.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 06:00,Bandara Internasional I Gusti Ngurah Rai,2024-12-12 07:35,95,Batik Air,Economy,4061280.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 14:15,Bandar Udara Internasional Yogyakarta,2024-12-12 15:10,115,Sriwijaya Air,Economy,4139130.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 14:05,Bandar Udara Jenderal Ahmad Yani,2024-12-12 14:55,110,Lion,Economy,3033010.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 14:25,Bandar Udara Jenderal Ahmad Yani,2024-12-12 15:15,110,Sriwijaya Air,Economy,4139130.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 04:45,Bandar Udara Internasional Juanda,2024-12-12 05:20,95,Citilink Indonesia,Economy,2037970.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 07:20,Bandar Udara Internasional Juanda,2024-12-12 07:55,95,Citilink Indonesia,Economy,2161180.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 09:05,Bandar Udara Internasional Juanda,2024-12-12 09:40,95,Citilink Indonesia,Economy,2222230.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 09:15,Bandar Udara Internasional Juanda,2024-12-12 09:55,100,Lion,Economy,2283290.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 19:00,Bandar Udara Internasional Juanda,2024-12-12 19:40,100,Batik Air,Economy,2408390.0
+Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 17:25,Bandar Udara Internasional Juanda,2024-12-12 17:55,90,Sriwijaya Air,Economy,4139130.0
+Bandar Udara Internasional Sultan Iskandar Muda,2024-12-12 16:45,Bandar Udara Internasional Soekarno Hatta,2024-12-12 21:50,305,Lion,Economy,3474160.0
+Bandar Udara Internasional Sultan Iskandar Muda,2024-12-12 12:10,Bandar Udara Internasional Soekarno Hatta,2024-12-12 15:10,180,Lion,Economy,3579660.0
+Bandar Udara Internasional Sultan Iskandar Muda,2024-12-12 14:05,Bandar Udara Internasional Soekarno Hatta,2024-12-12 17:05,180,Lion,Economy,3579660.0
+Bandar Udara Internasional Sultan Iskandar Muda,2024-12-12 07:00,Bandar Udara Internasional Soekarno Hatta,2024-12-12 09:50,170,Batik Air,Economy,3895460.0
+Bandar Udara Internasional Sultan Iskandar Muda,2024-12-12 12:10,Bandar Udara Internasional Soekarno Hatta,2024-12-12 15:10,180,Super Air Jet,Economy,4139130.0
+Bandar Udara Internasional Sultan Iskandar Muda,2024-12-12 15:15,Bandar Udara Internasional Soekarno Hatta,2024-12-12 18:00,165,Pelita Air,Economy,4139130.0
+Bandar Udara Internasional Sultan Iskandar Muda,2024-12-12 11:05,Bandar Udara Internasional Soekarno Hatta,2024-12-12 14:05,180,Garuda Indonesia,Economy,7764360.0
+Bandar Udara Internasional Sultan Iskandar Muda,2024-12-12 15:40,Bandar Udara Internasional Soekarno Hatta,2024-12-12 18:40,180,Garuda Indonesia,Economy,7764360.0
+Bandar Udara Internasional Sultan Iskandar Muda,2024-12-12 15:40,Bandar Udara Internasional Soekarno Hatta,2024-12-12 18:40,180,Garuda Indonesia,Economy,15097680.0
+Bandar Udara Internasional Sultan Iskandar Muda,2024-12-12 11:05,Bandar Udara Internasional Soekarno Hatta,2024-12-12 14:05,180,Garuda Indonesia,Economy,7626790.0
+Bandar Udara Internasional Sultan Iskandar Muda,2024-12-12 15:40,Bandar Udara Internasional Soekarno Hatta,2024-12-12 18:40,180,Garuda Indonesia,Economy,7626790.0
+Bandar Udara Internasional Sultan Iskandar Muda,2024-12-12 11:05,Bandar Udara Internasional Soekarno Hatta,2024-12-12 14:05,180,Garuda Indonesia,Economy,8537740.0
+Bandar Udara Internasional Sultan Iskandar Muda,2024-12-12 15:40,Bandar Udara Internasional Soekarno Hatta,2024-12-12 18:40,180,Garuda Indonesia,Economy,8537740.0
+Bandar Udara Internasional Sultan Mahmud Badaruddin II,2024-12-12 17:50,Bandar Udara Internasional Soekarno Hatta,2024-12-12 19:00,70,Lion,Economy,1467120.0
+Bandar Udara Internasional Sultan Mahmud Badaruddin II,2024-12-12 17:40,Bandar Udara Internasional Soekarno Hatta,2024-12-12 18:50,70,Citilink Indonesia,Economy,1506987.0
+Bandar Udara Internasional Sultan Mahmud Badaruddin II,2024-12-12 13:45,Bandar Udara Internasional Soekarno Hatta,2024-12-12 14:55,70,Thai Lion Air,Economy,1540490.0
+Bandar Udara Internasional Sultan Mahmud Badaruddin II,2024-12-12 18:15,Bandar Udara Internasional Soekarno Hatta,2024-12-12 19:25,70,Garuda Indonesia,Economy,1860820.0
+Bandar Udara Internasional Sultan Mahmud Badaruddin II,2024-12-12 08:50,Bandar Udara Internasional Soekarno Hatta,2024-12-12 10:00,70,Pelita Air,Economy,4139130.0
+Bandar Udara Internasional Sultan Mahmud Badaruddin II,2024-12-12 12:50,Bandar Udara Internasional Soekarno Hatta,2024-12-12 14:00,70,Super Air Jet,Economy,4139130.0
+Bandar Udara Internasional Sultan Mahmud Badaruddin II,2024-12-12 09:00,Bandar Udara Internasional Yogyakarta,2024-12-12 10:40,100,Lion,Economy,3189070.0
+Bandar Udara Internasional Sultan Mahmud Badaruddin II,2024-12-12 12:50,Bandar Udara Internasional Soekarno Hatta,2024-12-12 14:00,70,Lion,Economy,3191670.0
+Bandar Udara Internasional Sultan Mahmud Badaruddin II,2024-12-12 07:00,Bandar Udara Internasional Yogyakarta,2024-12-12 09:35,155,Batik Air,Economy,3292570.0
+Bandar Udara Internasional Sultan Mahmud Badaruddin II,2024-12-12 09:00,Bandar Udara Internasional Yogyakarta,2024-12-12 13:50,290,Batik Air,Economy,3292570.0
+Bandar Udara Internasional Sultan Mahmud Badaruddin II,2024-12-12 15:45,Bandar Udara Internasional Soekarno Hatta,2024-12-12 17:00,75,Garuda Indonesia,Economy,4385770.0
+Bandar Udara Internasional Sultan Mahmud Badaruddin II,2024-12-12 09:00,Bandar Udara Internasional Yogyakarta,2024-12-12 10:40,100,Super Air Jet,Economy,4139130.0
+Bandar Udara Internasional Sultan Mahmud Badaruddin II,2024-12-12 20:25,Bandar Udara Internasional Soekarno Hatta,2024-12-12 21:35,70,Citilink Indonesia,Economy,3048826.0
+Bandar Udara Internasional Sultan Mahmud Badaruddin II,2024-12-12 15:45,Bandar Udara Internasional Soekarno Hatta,2024-12-12 17:00,75,Garuda Indonesia,Economy,4248100.0
+Bandar Udara Internasional Sultan Mahmud Badaruddin II,2024-12-12 18:15,Bandar Udara Internasional Soekarno Hatta,2024-12-12 19:25,70,Garuda Indonesia,Economy,4248100.0
+Bandar Udara Internasional Sultan Mahmud Badaruddin II,2024-12-12 09:30,Bandar Udara Internasional Soekarno Hatta,2024-12-12 10:45,75,Garuda Indonesia,Business Class,13681110.0
+Bandar Udara Internasional Sultan Mahmud Badaruddin II,2024-12-12 10:50,Bandar Udara Internasional Soekarno Hatta,2024-12-12 12:00,70,Lion,Economy,3396898.0
+Bandar Udara Internasional Sultan Mahmud Badaruddin II,2024-12-12 13:50,Bandar Udara Internasional Soekarno Hatta,2024-12-12 15:00,70,Citilink Indonesia,Economy,3432886.0
+Bandar Udara Internasional Sultan Mahmud Badaruddin II,2024-12-12 08:50,Bandar Udara Internasional Soekarno Hatta,2024-12-12 10:00,70,Lion,Economy,3563550.0
+Bandar Udara Internasional Sultan Mahmud Badaruddin II,2024-12-12 14:35,Bandar Udara Internasional Halim Perdanakusuma,2024-12-12 15:50,75,Batik Air,Economy,3857950.0
+Bandar Udara Internasional Syamsudin Noor,2024-12-12 15:10,Bandar Udara Internasional Soekarno Hatta,2024-12-12 15:55,105,Lion,Economy,2299330.0
+Bandar Udara Internasional Syamsudin Noor,2024-12-12 06:00,Bandar Udara Internasional Soekarno Hatta,2024-12-12 06:45,105,Citilink Indonesia,Economy,2368056.0
+Bandar Udara Internasional Syamsudin Noor,2024-12-12 13:00,Bandar Udara Internasional Soekarno Hatta,2024-12-12 13:45,105,Citilink Indonesia,Economy,2437986.0
+Bandar Udara Internasional Syamsudin Noor,2024-12-12 14:10,Bandar Udara Internasional Soekarno Hatta,2024-12-12 14:55,105,Citilink Indonesia,Economy,2437986.0
+Bandar Udara Internasional Syamsudin Noor,2024-12-12 13:30,Bandar Udara Internasional Soekarno Hatta,2024-12-12 14:15,105,Super Air Jet,Economy,4139130.0
+Bandar Udara Internasional Syamsudin Noor,2024-12-12 17:25,Bandar Udara Internasional Soekarno Hatta,2024-12-12 18:10,105,Pelita Air,Economy,4139130.0
+Bandar Udara Internasional Syamsudin Noor,2024-12-12 16:55,Bandar Udara Internasional Yogyakarta,2024-12-12 17:35,100,Lion,Economy,2556230.0
+Bandar Udara Internasional Syamsudin Noor,2024-12-12 13:30,Bandar Udara Internasional Soekarno Hatta,2024-12-12 14:15,105,Lion,Economy,3274730.0
+Bandar Udara Internasional Syamsudin Noor,2024-12-12 06:10,Bandar Udara Internasional Sultan Aji Muhammad Sulaiman Sepinggan Balikpapan,2024-12-12 07:40,90,Wings Abadi Airlines,Economy,4139130.0
+Bandar Udara Internasional Syamsudin Noor,2024-12-12 11:00,Bandar Udara Jenderal Ahmad Yani,2024-12-12 11:25,85,Lion,Economy,2075660.0
+Bandar Udara Internasional Syamsudin Noor,2024-12-12 10:35,Bandar Udara Jenderal Ahmad Yani,2024-12-12 10:50,75,Citilink Indonesia,Economy,2133294.0
+Bandar Udara Internasional Syamsudin Noor,2024-12-12 11:50,Bandar Udara Internasional Juanda,2024-12-12 12:10,80,Lion,Economy,1610459.0
+Bandar Udara Internasional Syamsudin Noor,2024-12-12 19:20,Bandar Udara Internasional Juanda,2024-12-12 19:25,65,Citilink Indonesia,Economy,1611508.0
+Bandar Udara Internasional Syamsudin Noor,2024-12-12 20:05,Bandar Udara Internasional Juanda,2024-12-12 20:10,65,Citilink Indonesia,Economy,1611508.0
+Bandar Udara Internasional Syamsudin Noor,2024-12-12 13:10,Bandar Udara Internasional Juanda,2024-12-12 13:30,80,Super Air Jet,Economy,4139130.0
+Bandar Udara Internasional Syamsudin Noor,2024-12-12 16:55,Bandar Udara Internasional Yogyakarta,2024-12-12 17:35,100,Lion,Economy,3776280.0
+Bandar Udara Internasional Yogyakarta,2024-11-27 16:15:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 17:30:00,75,TransNusa,Economy,1603082.0
+Bandar Udara Internasional Yogyakarta,2024-11-27 19:55:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 21:10:00,75,Citilink Indonesia,Economy,1645790.0
+Bandar Udara Internasional Yogyakarta,2024-11-27 19:15:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 20:30:00,75,Batik Air,Economy,1664520.0
+Bandar Udara Internasional Yogyakarta,2024-11-27 19:15:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 20:35:00,80,Pelita Air Service,Economy,2003040.0
+Bandar Udara Internasional Yogyakarta,2024-11-27 06:25:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 07:40:00,75,Garuda Indonesia,Economy,4274030.0
+Bandar Udara Internasional Yogyakarta,2024-11-27 06:25:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 07:40:00,75,Garuda Indonesia,Economy,4863280.0
+Bandar Udara Jenderal Ahmad Yani,2024-11-27 17:10:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 18:25:00,75,Citilink Indonesia,Economy,1719622.0
+Bandar Udara Jenderal Ahmad Yani,2024-11-27 15:40:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 16:50:00,70,Thai Lion Air,Economy,1776730.0
+Bandar Udara Jenderal Ahmad Yani,2024-11-27 07:00:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 08:05:00,65,Batik Air,Economy,1897296.0
+Bandar Udara Jenderal Ahmad Yani,2024-11-27 07:05:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 08:20:00,75,Garuda Indonesia,Economy,1940596.0
+Bandar Udara Jenderal Ahmad Yani,2024-11-27 09:45:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 11:05:00,80,Garuda Indonesia,Economy,4274030.0
+Bandar Udara Jenderal Ahmad Yani,2024-11-27 15:25:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 16:50:00,85,Garuda Indonesia,Economy,4274030.0
+Bandar Udara Jenderal Ahmad Yani,2024-11-27 10:10:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 11:25:00,75,Citilink Indonesia,Economy,3434794.0
+Bandar Udara Jenderal Ahmad Yani,2024-11-27 15:25:00,Bandar Udara Internasional Soekarno Hatta,2024-11-27 16:50:00,85,Garuda Indonesia,Economy,5047310.0
+Bandar Udara Mopah,2024-12-12 09:00,Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 13:25,325,Lion,Economy,9126980.0
+Bandar Udara Mopah,2024-12-12 09:00,Bandar Udara Internasional Soekarno Hatta,2024-12-12 15:25,505,Lion,Economy,9206680.0
+Bandar Udara Mopah,2024-12-12 09:20,Bandar Udara Sentani,2024-12-12 10:30,70,Garuda Indonesia,Economy,14002750.0
+Bandar Udara Mopah,2024-12-12 09:20,Bandar Udara Sentani,2024-12-12 10:30,70,Garuda Indonesia,Economy,14033400.0
+Bandar Udara Mopah,2024-12-12 09:20,Bandar Udara Sentani,2024-12-12 10:30,70,Garuda Indonesia,Economy,13887350.0
+Bandar Udara Mopah,2024-12-12 09:20,Bandar Udara Sentani,2024-12-12 10:30,70,Garuda Indonesia,Economy,13887350.0
+Bandar Udara Mopah,2024-12-12 09:20,Bandar Udara Sentani,2024-12-12 10:30,70,Garuda Indonesia,Economy,13907330.0
+Bandar Udara Mopah,2024-12-12 09:20,Bandar Udara Sentani,2024-12-12 10:30,70,Garuda Indonesia,Economy,14710950.0
+Bandar Udara Mopah,2024-12-12 09:20,Bandar Udara Sentani,2024-12-12 10:30,70,Garuda Indonesia,Economy,14736480.0
+Bandar Udara Sentani,2024-12-12 14:00,Bandar Udara Internasional Soekarno Hatta,2024-12-12 17:05,305,Garuda Indonesia,Economy,14002750.0
+Bandar Udara Sentani,2024-12-12 11:25,Bandar Udara Internasional Soekarno Hatta,2024-12-12 14:30,305,Garuda Indonesia,Economy,14033400.0
+Bandar Udara Sentani,2024-12-12 14:00,Bandar Udara Internasional Soekarno Hatta,2024-12-12 17:05,305,Garuda Indonesia,Economy,13887350.0
+Bandar Udara Sentani,2024-12-12 11:25,Bandar Udara Internasional Soekarno Hatta,2024-12-12 14:30,305,Garuda Indonesia,Economy,13887350.0
+Bandar Udara Sentani,2024-12-12 11:25,Bandar Udara Internasional Soekarno Hatta,2024-12-12 14:30,305,Garuda Indonesia,Economy,13907330.0
+Bandar Udara Sentani,2024-12-12 11:25,Bandar Udara Internasional Soekarno Hatta,2024-12-12 14:30,305,Garuda Indonesia,Economy,14710950.0
+Bandar Udara Sentani,2024-12-12 11:25,Bandar Udara Internasional Soekarno Hatta,2024-12-12 14:30,305,Garuda Indonesia,Economy,14736480.0
+Bandar Udara Sentani,2024-12-12 09:00,Bandar Udara Internasional Soekarno Hatta,2024-12-12 13:20,380,Batik Air,Economy,7995230.0
+Bandar Udara Sentani,2024-12-12 09:50,Bandar Udara Internasional Soekarno Hatta,2024-12-12 12:55,305,Batik Air,Economy,8251630.0
+Bandar Udara Sentani,2024-12-12 10:50,Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 16:10,380,Lion,Economy,8279450.0
+Bandar Udara Sentani,2024-12-12 09:00,Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 11:25,205,Batik Air,Economy,8368350.0
+Bandar Udara Sentani,2024-12-12 11:25,Bandar Udara Internasional Soekarno Hatta,2024-12-12 14:30,305,Garuda Indonesia,Economy,13457080.0
+Bandar Udara Sentani,2024-12-12 14:00,Bandar Udara Internasional Soekarno Hatta,2024-12-12 17:05,305,Garuda Indonesia,Economy,13457080.0
+Bandar Udara Sentani,2024-12-12 11:00,Bandar Udara Internasional Juanda,2024-12-12 16:20,440,Lion,Economy,7421030.0
+Bandar Udara Sentani,2024-12-12 09:00,Bandar Udara Internasional Sultan Hasanuddin,2024-12-12 11:25,205,Batik Air,Economy,7904530.0
+Bandara Internasional I Gusti Ngurah Rai,2024-12-12 11:55,Bandar Udara Internasional Yogyakarta,2024-12-12 12:45,110,Lion,Economy,4061280.0
