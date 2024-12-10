@@ -1,18 +1,23 @@
-# Dockerfile
-FROM python:3.12.0
-# Allow statements and log messages to immediately appear in the logs
-ENV PYTHONUNBUFFERED True
-# Copy local code to the container image.
-ENV APP_HOME /back-end
-WORKDIR $APP_HOME
-COPY . ./
+FROM python:3.11-alpine
 
-RUN pip install --no-cache-dir --upgrade pip
+# Set up environment variables for Python
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+# Create and set the working directory
+WORKDIR /
+
+# Copy only the requirements file first to leverage Docker caching
+COPY requirements.txt .
+
+# Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Run the web service on container startup. Here we use the gunicorn
-# webserver, with one worker process and 8 threads.
-# For environments with multiple CPU cores, increase the number of workers
-# to be equal to the cores available.
-# Timeout is set to 0 to disable the timeouts of the workers to allow Cloud Run to handle instance scaling.
-CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 app:app
+# Copy the entire application code
+COPY . .
+
+# Expose the port your application will run on
+EXPOSE 4000
+
+# Specify the command to run on container start
+CMD ["python", "app.py"]
