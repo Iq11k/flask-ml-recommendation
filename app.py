@@ -7,6 +7,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.metrics import mean_squared_error
 import googlemaps
+import math
 
 train = 0
 
@@ -182,36 +183,37 @@ def calculate_cbf_scores(filtered_places):
 
 # Function to calculate distance using Google Maps API
 def calculate_distance(start_lat, start_lng, end_lat, end_lng):
-    gmaps_api_key = 'AIzaSyDlVP8FhcQkBZVS7YqRIdw1Y6Zb6pqfe2U'
-    gmaps = googlemaps.Client(key=gmaps_api_key)
-    origin = (start_lat, start_lng)
-    destination = (end_lat, end_lng)
-
-    # Get distance matrix from Google Maps API
-    result = gmaps.distance_matrix(origin, destination)
-
+    """
+    Calculate the great-circle distance between two points on Earth using the Haversine formula.
+    Returns the distance in kilometers and an estimated travel time in minutes.
+    """
     try:
-        # Get distance matrix from Google Maps API
-        result = gmaps.distance_matrix(origin, destination)
+        # Convert latitude and longitude from degrees to radians
+        start_lat_rad = math.radians(start_lat)
+        start_lng_rad = math.radians(start_lng)
+        end_lat_rad = math.radians(end_lat)
+        end_lng_rad = math.radians(end_lng)
 
-        # Check if the result contains the expected data
-        if (result and
-            'rows' in result and
-            result['rows'] and
-            'elements' in result['rows'][0] and
-            result['rows'][0]['elements'] and
-            'distance' in result['rows'][0]['elements'][0] and
-            'duration' in result['rows'][0]['elements'][0]):
+        # Radius of the Earth in kilometers
+        earth_radius_km = 6371.0
 
-            distance_km = result['rows'][0]['elements'][0]['distance']['value'] / 1000  # Convert meters to km
-            travel_time = result['rows'][0]['elements'][0]['duration']['value'] / 60
-            return distance_km, travel_time
-        else:
-            print(f"Incomplete distance matrix result for origin: {origin}, destination: {destination}")
-            return None
+        # Haversine formula
+        dlat = end_lat_rad - start_lat_rad
+        dlng = end_lng_rad - start_lng_rad
+        a = math.sin(dlat / 2)**2 + math.cos(start_lat_rad) * math.cos(end_lat_rad) * math.sin(dlng / 2)**2
+        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+
+        # Calculate the distance
+        distance_km = earth_radius_km * c
+
+        # Estimate travel time assuming an average speed (e.g., 60 km/h)
+        average_speed_kmh = 60  # You can adjust this value based on your scenario
+        travel_time_minutes = (distance_km / average_speed_kmh) * 60
+
+        return distance_km, travel_time_minutes
 
     except Exception as e:
-        print(f"Error calculating distance for origin: {origin}, destination: {destination}")
+        print(f"Error calculating distance between coordinates: ({start_lat}, {start_lng}) and ({end_lat}, {end_lng})")
         print(f"Error details: {str(e)}")
         return None
 
@@ -530,4 +532,4 @@ def recommend():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
     
-app.run(debug=True, port=4000)
+app.run(debug=False, host='0.0.0.0')
