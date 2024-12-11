@@ -11,6 +11,7 @@ WORKDIR /
 COPY requirements.txt .
 
 # Install dependencies
+RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the entire application code
